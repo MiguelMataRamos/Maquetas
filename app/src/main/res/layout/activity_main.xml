@@ -13,7 +13,41 @@
         android:background="@color/fondo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        >
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="MENSAJES"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/iconoarriba1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/mensaje"
+            android:padding="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/iconoarriba2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@id/iconoarriba1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/baseline_co_present_24"
+            android:padding="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
         android:layout_width="match_parent"
